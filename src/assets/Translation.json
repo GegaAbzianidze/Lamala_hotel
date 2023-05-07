@@ -1,0 +1,22 @@
+{
+  "en": {
+    "title": "LAMALA",
+    "home": "Home",
+    "destination": "Destination",
+    "rooms": "Rooms",
+    "review": "Review",
+    "faq": "FAQ",
+    "bookNow": "Book Now",
+    "mobileMenu": "Menu"
+  },
+  "ge": {
+    "title": "ლამალა",
+    "home": "მთავარი",
+    "destination": "ღირსშესანიშნაობები",
+    "rooms": "ოთახები",
+    "review": "შეფასება",
+    "faq": "FAQ",
+    "bookNow": "დაჯავშნე",
+    "mobileMenu": "მენიუ"
+  }
+}
