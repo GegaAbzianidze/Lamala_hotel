@@ -1,4 +1,33 @@
 body {
   padding: 2rem;
-  background-color: #0F1014;
+  background-color: #0f1014;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
+}
+
+.mapboxgl-canvas {
+  border-radius: 15px;
+}
+
+.SCRL::-webkit-scrollbar {
+  width: 4px;
+}
+
+.SCRL::-webkit-scrollbar-track {
+  background-color: #4a4c4f;
+}
+
+.SCRL::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 50px;
+  width: 6px;
+}
+
+.bgC {
+  padding: 2rem;
+  margin: -2rem;
+  margin-top: 50px;
 }

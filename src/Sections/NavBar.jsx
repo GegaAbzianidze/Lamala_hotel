@@ -22,8 +22,8 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         <h1
           className={`cursor-pointer ${
             selectedCategory === "Home"
-              ? "border-b-2 border-[#EAEAEA] text-[#EAEAEA]"
-              : "text-[#4b5563]"
+              ? "border-b-2 border-LightGray text-LightGray"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Home")}
         >
@@ -32,8 +32,8 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         <h1
           className={`cursor-pointer ${
             selectedCategory === "Destination"
-              ? "border-b-2 border-[#EAEAEA] text-[#EAEAEA]"
-              : "text-[#4b5563]"
+              ? "border-b-2 border-LightGray text-LightGray"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Destination")}
         >
@@ -42,8 +42,8 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         <h1
           className={`cursor-pointer ${
             selectedCategory === "Rooms"
-              ? "border-b-2 border-[#EAEAEA] text-[#EAEAEA]"
-              : "text-[#4b5563]"
+              ? "border-b-2 border-LightGray text-LightGray"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Rooms")}
         >
@@ -52,8 +52,8 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         <h1
           className={`cursor-pointer ${
             selectedCategory === "Review"
-              ? "border-b-2 border-[#EAEAEA] text-[#EAEAEA]"
-              : "text-[#4b5563]"
+              ? "border-b-2 border-LightGray text-LightGray"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Review")}
         >
@@ -62,8 +62,8 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         <h1
           className={`cursor-pointer ${
             selectedCategory === "FAQ"
-              ? "border-b-2 border-[#EAEAEA] text-[#EAEAEA]"
-              : "text-[#4b5563]"
+              ? "border-b-2 border-LightGray text-LightGray"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("FAQ")}
         >
@@ -79,7 +79,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
         >
           {selectedLanguage}
         </button>
-        <button className="px-4 py-2 font-semibold text-white bg-[#256B43] rounded-sm">
+        <button className="px-4 py-2 font-semibold text-white bg-MainGreen rounded-sm">
           {translations.bookNow}
         </button>
       </div>
@@ -109,7 +109,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
           className={`cursor-pointer ${
             selectedCategory === "Home"
               ? "border-b-2 border-black text-black"
-              : "text-[#4b5563]"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Home")}
         >
@@ -119,7 +119,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
           className={`cursor-pointer ${
             selectedCategory === "Destination"
               ? "border-b-2 border-black text-black"
-              : "text-[#4b5563]"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Destination")}
         >
@@ -129,7 +129,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
           className={`cursor-pointer ${
             selectedCategory === "Rooms"
               ? "border-b-2 border-black text-black"
-              : "text-[#4b5563]"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Rooms")}
         >
@@ -139,7 +139,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
           className={`cursor-pointer ${
             selectedCategory === "Review"
               ? "border-b-2 border-black text-black"
-              : "text-[#4b5563]"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("Review")}
         >
@@ -149,7 +149,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
           className={`cursor-pointer ${
             selectedCategory === "FAQ"
               ? "border-b-2 border-black text-black"
-              : "text-[#4b5563]"
+              : "text-DarkGray"
           }`}
           onClick={() => handleCategoryClick("FAQ")}
         >
@@ -165,7 +165,7 @@ function NavBar({ translations, selectedLanguage, handleLanguageChange }) {
               >
                 {selectedLanguage}
               </button>
-              <button className="px-4 py-2 font-semibold text-white bg-[#256B43] rounded-sm">
+              <button className="px-4 py-2 font-semibold text-white bg-MainGreen rounded-sm">
                 {translations.bookNow}
               </button>
             </div>

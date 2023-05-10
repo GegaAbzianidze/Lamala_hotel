@@ -7,7 +7,10 @@
     "review": "Review",
     "faq": "FAQ",
     "bookNow": "Book Now",
-    "mobileMenu": "Menu"
+    "mobileMenu": "Menu",
+    "LandingTitle": "Hotel Lamala is set in Becho in the Samegrelo\nZemo-Svaneti region",
+    "Desc": "At the hotel, all rooms include a balcony.\nA à la carte breakfast is available every morning at Hotel Lamala.",
+    "BottomDesc": "Popular points of interest near the accommodation\ninclude Chokhuldi, Bagvdanari and Mazeri."
   },
   "ge": {
     "title": "ლამალა",
@@ -17,6 +20,9 @@
     "review": "შეფასება",
     "faq": "FAQ",
     "bookNow": "დაჯავშნე",
-    "mobileMenu": "მენიუ"
+    "mobileMenu": "მენიუ",
+    "LandingTitle": "LML",
+    "Desc": "At the hotel",
+    "BottomDesc": "Popular"
   }
 }
