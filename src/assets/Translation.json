@@ -10,7 +10,15 @@
     "mobileMenu": "Menu",
     "LandingTitle": "Hotel Lamala is set in Becho in the Samegrelo\nZemo-Svaneti region",
     "Desc": "At the hotel, all rooms include a balcony.\nA à la carte breakfast is available every morning at Hotel Lamala.",
-    "BottomDesc": "Popular points of interest near the accommodation\ninclude Chokhuldi, Bagvdanari and Mazeri."
+    "BottomDesc": "Popular points of interest near the accommodation\ninclude Chokhuldi, Bagvdanari and Mazeri.",
+    "question1": "What type of room can I book at Hotel Lamala?",
+    "question2": "How much does it cost to stay at Hotel Lamala?",
+    "question3": "What are the check-in and check-out times at Hotel Lamala?",
+    "question4": "Is Hotel Lamala popular with families?",
+    "answer1": "Room options at Hotel Lamala include: Triple",
+    "answer2": "The prices at Hotel Lamala may vary depending on your stay (e.g. dates you select, rooms you select and etc.). See the prices by entering your dates on Bookings website.",
+    "answer3": "Check-in at Hotel Lamala is from 12:00, and check-out is until 10:00.",
+    "answer4": "Yes, Hotel Lamala is popular with guests booking family stays."
   },
   "ge": {
     "title": "ლამალა",
@@ -21,8 +29,16 @@
     "faq": "FAQ",
     "bookNow": "დაჯავშნე",
     "mobileMenu": "მენიუ",
-    "LandingTitle": "LML",
-    "Desc": "At the hotel",
-    "BottomDesc": "Popular"
+    "LandingTitle": "სასტუმრო ლამალა მდებარეობს ბეჩოში, სამეგრელო ზემო-სვანეთის რეგიონში",
+    "Desc": "სასტუმროში ყველა ოთახს აქვს ბალკონი.\nA à la carte breakfast ხელმისაწვდომია ყოველი დილით სასტუმროში.",
+    "BottomDesc": "პოპულარული ადგილები ახლოს სასტუმროსთან\n არის ჩოხულდი, ბაღვდანარი და მაზერი.",
+    "question1": "რომელი ტიპის ოთახები შემიძლია დავჯავშნო ლამალაში?",
+    "question2": "რა არის ლამალაში ოთახის დაჯავშნის ფასი?",
+    "question3": "რომელია ლამალაში check-in და check-out დროები?",
+    "question4": "არის ლამალა პოპულარული საოჯახო ჯგუფებისთვის?",
+    "answer1": "ლამალაში ოთახების არჩევანი არის არის: Triple",
+    "answer2": "ლამალაში ფასები დამოკიდებულია ჯავშნის თარიღზე,ოთახის რაოდენობაზე და ღამეების რაოდენობაზე. დაწვრილებით ფასის სანახავად გადადით Booking-ზე და შეიყვანეთ თქვენი თარიღები.",
+    "answer3": "ლამალაში შესვლა შეგიძლიათ 12:00-დან, გასვლა კი უნდა მოხდეს 10:00-მდე.",
+    "answer4": "კი, ლამალა არის პოპულარული საოჯახო ჯგუფებისთვის."
   }
 }

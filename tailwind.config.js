@@ -6,6 +6,7 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      black:'#000000',
       MainGreen: "#256B43",
       LightGreen: "#1FB761",
       DarkGreen: "#1F2D25",
@@ -20,6 +21,7 @@ export default {
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
+      yellow: "rgb(238, 255, 0)",
     },
   },
   plugins: [],
