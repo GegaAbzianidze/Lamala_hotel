@@ -35,23 +35,12 @@ export default function ReviewCarousel() {
   ];
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="w-full">
-        <div className="flex flex-wrap justify-center">
-          {reviews.map((review, index) => (
-            <div
-              key={index}
-              className={`w-full md:w-1/3 ${
-                index === Math.floor(reviews.length / 2)
-                  ? "md:scale-100"
-                  : "md:scale-75"
-              }`}
-            >
-              <ReviewCard reviews={review} />
-            </div>
-          ))}
+    <div className="flex flex-wrap justify-between gap-4 md:justify-center lg:justify-between">
+      {reviews.map((review, index) => (
+        <div key={index} className="w-full md:w-auto">
+          <ReviewCard reviews={review} />
         </div>
-      </div>
+      ))}
     </div>
   );
 }

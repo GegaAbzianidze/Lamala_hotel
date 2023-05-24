@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
-import { Icon } from "@iconify/react";
-import googleMaps from "../assets/Google_maps.png";
+import Button from "../assets/Button";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZ2VnYTE4MjIiLCJhIjoiY2xoZHdkbTFpMHFscjNnbnZiYTZjbzA2eiJ9.ilONB2OxcDRZXPutJfuNNw";
@@ -104,99 +103,43 @@ function Destinations() {
   };
 
   return (
-    <div className="md:flex justify-between md:px-32 md:py-12">
-      <div className="md:w-[800px] w-full h-[450px] rounded-lg" ref={mapContainer} />
-      <div className="md:w-[450px] w-full h-[450px] overflow-y-auto SCRL">
-        <button
-          onClick={() => handleButtonClick([41.725462, 44.770298])}
-          className="flex items-center justify-beetween text-white w-full px-4 py-6 mb-2 hover:bg-DarkGreen focus:bg-DarkGreen bg-transparent"
-        >
-          <div className="flex items-center gap-2">
-            <Icon icon="ion:navigate-circle" className="text-2xl" />
-            <div className="flex-grow flex flex-col text-left ">
-              <span className="text-sm font-bold">
-                Museum of History and Ethnography
-              </span>
-              <span className="text-sm text-DarkyGray">10 KM</span>
-            </div>
-          </div>
-          <a
-            href="https://maps.google.com/maps?q=41.725462,44.770298"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center ml-auto text-MainGreen hover:text-white"
-          >
-            <img src={googleMaps} alt="Google Maps" className="h-9" />
-          </a>
-        </button>
-        <button
-          onClick={() => handleButtonClick([41.823251, 44.791628])}
-          className="flex items-center justify-beetween text-white w-full px-4 py-6 mb-2 hover:bg-DarkGreen focus:bg-DarkGreen bg-transparent"
-        >
-          <div className="flex items-center gap-2">
-            <Icon icon="ion:navigate-circle" className="text-2xl" />
-            <div className="flex-grow flex flex-col text-left ">
-              <span className="text-sm font-bold">
-              Mikhail Khergiani House Museum
-              </span>
-              <span className="text-sm text-DarkyGray">11 KM</span>
-            </div>
-          </div>
-          <a
-            href="https://maps.google.com/maps?q=41.725462,44.770298"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center ml-auto text-MainGreen hover:text-white"
-          >
-            <img src={googleMaps} alt="Google Maps" className="h-9" />
-          </a>
-        </button>
-        <button
-          onClick={() => handleButtonClick([41.803239, 44.798283])}
-          className="flex items-center justify-beetween text-white w-full px-4 py-6 mb-2 hover:bg-DarkGreen focus:bg-DarkGreen bg-transparent"
-        >
-          <div className="flex items-center gap-2">
-            <Icon icon="ion:navigate-circle" className="text-2xl" />
-            <div className="flex-grow flex flex-col text-left ">
-              <span className="text-sm font-bold">
-              Эльбрус
-              </span>
-              <span className="text-sm text-DarkyGray">18 KM</span>
-            </div>
-          </div>
-          <a
-            href="https://maps.google.com/maps?q=41.725462,44.770298"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center ml-auto text-MainGreen hover:text-white"
-          >
-            <img src={googleMaps} alt="Google Maps" className="h-9" />
-          </a>
-        </button>
-        <button
-          className="block w-full px-4 py-6 mb-2 hover:bg-MainGreen focus:bg-MainGreen bg-transparent}"
-          onClick={() => handleButtonClick([41.819299, 44.78158])}
-        >
-          Button 4
-        </button>
-        <button
-          className="block w-full px-4 py-6 mb-2 hover:bg-MainGreen focus:bg-MainGreen bg-transparent}"
-          onClick={() => handleButtonClick([41.8412, 44.778124])}
-        >
-          Button 5
-        </button>
-        <button
-          className="block w-full px-4 py-6 mb-2 hover:bg-MainGreen focus:bg-MainGreen bg-transparent}"
-          onClick={() => handleButtonClick([41.800143, 44.771467])}
-        >
-          Button 6
-        </button>
-        <button
-          className="block w-full px-4 py-6 mb-2 hover:bg-MainGreen focus:bg-MainGreen bg-transparent}"
-          onClick={() => handleButtonClick([41.809848, 44.754757])}
-        >
-          Button 7
-        </button>
+    <div className="flex flex-col md:flex-row md:justify-between lg:px-32 md:py-12">
+      <div
+        className="md:w-[800px] w-full md:max-w-[800px] h-[450px] rounded-lg overflow-hidden"
+        ref={mapContainer}
+      />
+      <div className="md:w-[450px] w-full md:max-w-[450px] h-[450px] overflow-y-auto SCRL">
+        <Button
+          handleClick={handleButtonClick}
+          coordinates={[41.725462, 44.770298]}
+          title="Museum of History and Ethnography"
+          distance="10"
+        />
+        <Button
+          handleClick={handleButtonClick}
+          coordinates={[41.823251, 44.791628]}
+          title="Mikhail Khergiani House Museum"
+          distance="10"
+        />
+        <Button
+          handleClick={handleButtonClick}
+          coordinates={[41.803239, 44.798283]}
+          title="Эльбрус"
+          distance="18"
+        />
+        {/* Rest of the buttons */}
+        <Button
+          handleClick={handleButtonClick}
+          coordinates={[41.803239, 44.798283]}
+          title="Эльбрус N1"
+          distance="18"
+        />
+        <Button
+          handleClick={handleButtonClick}
+          coordinates={[41.803239, 44.798283]}
+          title="Эльбрус N2"
+          distance="18"
+        />
       </div>
     </div>
   );

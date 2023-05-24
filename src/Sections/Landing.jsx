@@ -19,12 +19,12 @@ function Landing({ translations }) {
   };
 
   return (
-    <div className="relative">
+    <div>
       <h1
         className="text-white text-5xl font-bold mt-6"
         dangerouslySetInnerHTML={{ __html: Title }}
       ></h1>
-      <div className="justify-end flex mb-4">
+      <div className="flex justify-end mb-4">
         <p
           className="text-DarkGray text-lg mt-2"
           dangerouslySetInnerHTML={{ __html: Desc }}
@@ -36,9 +36,9 @@ function Landing({ translations }) {
           alt=""
           className="w-full h-[500px] object-cover object-center rounded-md"
         />
-        <div className="md:absolute -bottom-10 right-4 md:flex hidden">
-          <div className="bg-black bg-opacity-70 w-60 flex items-center justify-center text-center">
-            <div>
+        <div className="md:flex absolute -bottom-10 right-4 hidden">
+          <div className="hidden lg:flex bg-black bg-opacity-70 w-60  items-center justify-center text-center">
+            <div className="">
               <h1 className="text-white">Wonderful Becho</h1>
               <p className="text-DarkGray">Watch the new video</p>
             </div>
