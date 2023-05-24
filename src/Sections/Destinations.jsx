@@ -105,7 +105,7 @@ function Destinations() {
   return (
     <div className="flex flex-col md:flex-row md:justify-between lg:px-32 md:py-12">
       <div
-        className="md:w-[800px] w-full md:max-w-[800px] h-[450px] rounded-lg overflow-hidden"
+        className="md:w-[800px] w-full md:max-w-[800px] 2xl:w-[1200px] h-[450px] rounded-lg overflow-hidden"
         ref={mapContainer}
       />
       <div className="md:w-[450px] w-full md:max-w-[450px] h-[450px] overflow-y-auto SCRL">
