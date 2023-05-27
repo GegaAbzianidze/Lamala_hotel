@@ -3,8 +3,7 @@ import mapboxgl from "mapbox-gl";
 import Button from "../assets/Button";
 import PropTypes from "prop-types";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiZ2VnYTE4MjIiLCJhIjoiY2xoZHdkbTFpMHFscjNnbnZiYTZjbzA2eiJ9.ilONB2OxcDRZXPutJfuNNw";
+mapboxgl.accessToken = import.meta.env.VITE_MAP_KEY;
 
 function Destinations({ translations }) {
   const mapContainer = useRef(null);
@@ -144,7 +143,6 @@ function Destinations({ translations }) {
           title="Эльбрус"
           distance="18"
         />
-        {/* Rest of the buttons */}
         <Button
           handleClick={handleButtonClick}
           coordinates={[41.803239, 44.798283]}
