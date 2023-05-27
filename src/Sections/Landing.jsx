@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import Hotelimage from "../assets/HTL-transformed.jpeg";
+import Hotelimage2 from "../assets/HTL3.jpg";
 import PropTypes from "prop-types";
 import PopupVideo from "../assets/popupVideo";
 import { useState } from "react";
@@ -21,12 +22,12 @@ function Landing({ translations }) {
   return (
     <div>
       <h1
-        className="text-white text-5xl font-bold mt-6"
+        className="text-white text-5xl font-bold mt-6 leading-tight"
         dangerouslySetInnerHTML={{ __html: Title }}
       ></h1>
       <div className="flex justify-end mb-4">
         <p
-          className="text-DarkGray text-lg mt-2"
+          className="text-DarkGray text-lg mt-4"
           dangerouslySetInnerHTML={{ __html: Desc }}
         ></p>
       </div>
@@ -45,7 +46,7 @@ function Landing({ translations }) {
           </div>
           <div className="relative" onClick={openPopupHandler}>
             <img
-              src={Hotelimage}
+              src={Hotelimage2}
               alt=""
               className="object-cover w-52 cursor-pointer"
             />

@@ -10,9 +10,10 @@ const ReviewCard = ({ reviews }) => {
 
   return (
     <div
-      className="bg-Lightpp rounded-lg shadow-md p-4 md:w-[450px] md:h-[250px] sm:w-full sm:h-auto mt-8"
+      className="bg-Lightpp rounded-lg shadow-md p-4 md:w-[450px] md:h-[300px] sm:w-full sm:h-auto mt-8"
       style={{ maxWidth: "100%" }}
     >
+      <div className="flex flex-col justify-between h-full">
       <div className="flex items-center mb-4">
         <div className="flex">{renderStars()}</div>
       </div>
@@ -27,6 +28,7 @@ const ReviewCard = ({ reviews }) => {
           <p className="text-md font-semibold text-white">{reviews.name}</p>
           <p className="text-sm text-gray-500 text-white">{reviews.location}</p>
         </div>
+      </div>
       </div>
     </div>
   );

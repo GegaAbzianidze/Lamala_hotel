@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'muller';
+  src: url('./assets/Ga.otf') format('opentype');
+}
+
 body {
   padding: 2rem;
   background-color: #0f1014;
+  font-family: 'muller', Arial, sans-serif;
 }
 
 .mapboxgl-ctrl-attrib-inner {

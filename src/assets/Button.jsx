@@ -22,7 +22,7 @@ function Button({ handleClick, coordinates, title, distance }) {
           href={`https://maps.google.com/maps?q=${coordinates[0]},${coordinates[1]}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center ml-auto text-MainGreen hover:text-white"
+          className="flex items-center ml-auto text-MainGreen hover:text-white h-8"
         >
           <img src={googleMaps} alt="Google Maps" className="h-full max-h-full" />
         </a>

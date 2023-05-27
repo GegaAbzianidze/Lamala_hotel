@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import Landing from "./Sections/Landing";
 import NavBar from "./Sections/NavBar";
@@ -16,32 +16,48 @@ function App() {
     setSelectedLanguage(language);
   };
 
+  const sectionRefs = [
+    useRef(null), // Ref for Section 1
+    useRef(null), // Ref for Section 2
+    useRef(null), // Ref for Section 3
+    useRef(null), // Ref for Section 4
+    useRef(null), // Ref for Section 5
+  ];
+
+  const scrollToSection = (index) => {
+    sectionRefs[index].current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <>
       <NavBar
         selectedLanguage={selectedLanguage}
         handleLanguageChange={handleLanguageChange}
         translations={currentTranslations}
+        scrollToSection={scrollToSection} 
       />
       <div>
         <Landing translations={currentTranslations} />
       </div>
-      <div className="bg-Lightpp bgC">
+      <div className="bg-Lightpp bgC" ref={sectionRefs[0]}>
         <h1 className="text-LightGreen bg-DarkGreen p-2 w-fit rounded-md mb-8">
           {currentTranslations.destination}
         </h1>
         <Destinations />
       </div>
-      <div className="mt-14">
+      <div className="mt-14" ref={sectionRefs[1]}>
         <Carousel currentTranslations={currentTranslations} />
       </div>
-      <div>
+      <div ref={sectionRefs[2]}>
         <h1 className="text-LightGreen bg-DarkGreen p-2 w-fit rounded-md mt-8">
           {currentTranslations.review}
         </h1>
         <ReviewCarousel />
       </div>
-      <div>
+      <div ref={sectionRefs[3]}>
         <h1 className="text-LightGreen bg-DarkGreen p-2 w-fit rounded-md mt-8">
           {currentTranslations.faq}
         </h1>
