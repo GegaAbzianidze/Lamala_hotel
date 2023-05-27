@@ -18,7 +18,8 @@
     "answer1": "Room options at Hotel Lamala include: Triple",
     "answer2": "The prices at Hotel Lamala may vary depending on your stay (e.g. dates you select, rooms you select and etc.). See the prices by entering your dates on Bookings website.",
     "answer3": "Check-in at Hotel Lamala is from 12:00, and check-out is until 10:00.",
-    "answer4": "Yes, Hotel Lamala is popular with guests booking family stays."
+    "answer4": "Yes, Hotel Lamala is popular with guests booking family stays.",
+    "touch": "touch to start"
   },
   "ge": {
     "title": "ლამალა",
@@ -39,6 +40,7 @@
     "answer1": "ლამალაში ოთახების არჩევანი არის არის: Triple",
     "answer2": "ლამალაში ფასები დამოკიდებულია ჯავშნის თარიღზე,ოთახის რაოდენობაზე და ღამეების რაოდენობაზე. დაწვრილებით ფასის სანახავად გადადით Booking-ზე და შეიყვანეთ თქვენი თარიღები.",
     "answer3": "ლამალაში შესვლა შეგიძლიათ 12:00-დან, გასვლა კი უნდა მოხდეს 10:00-მდე.",
-    "answer4": "კი, ლამალა არის პოპულარული საოჯახო ჯგუფებისთვის."
+    "answer4": "კი, ლამალა არის პოპულარული საოჯახო ჯგუფებისთვის.",
+    "touch": "შეეხეთ რათა დაიწყოთ"
   }
 }

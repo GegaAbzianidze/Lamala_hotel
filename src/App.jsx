@@ -7,6 +7,7 @@ import Destinations from "./Sections/Destinations";
 import Carousel from "./Sections/Carousel";
 import FaqItem from "./Sections/FAQ";
 import ReviewCarousel from "./Sections/ReviewCarousel";
+import ScrollIndicator from "./assets/ScrollIndicator";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
@@ -37,8 +38,9 @@ function App() {
         selectedLanguage={selectedLanguage}
         handleLanguageChange={handleLanguageChange}
         translations={currentTranslations}
-        scrollToSection={scrollToSection} 
+        scrollToSection={scrollToSection}
       />
+      <ScrollIndicator />
       <div>
         <Landing translations={currentTranslations} />
       </div>
@@ -46,7 +48,7 @@ function App() {
         <h1 className="text-LightGreen bg-DarkGreen p-2 w-fit rounded-md mb-8">
           {currentTranslations.destination}
         </h1>
-        <Destinations />
+        <Destinations translations={currentTranslations} />
       </div>
       <div className="mt-14" ref={sectionRefs[1]}>
         <Carousel currentTranslations={currentTranslations} />

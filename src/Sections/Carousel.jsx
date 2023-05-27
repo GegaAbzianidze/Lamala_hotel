@@ -59,13 +59,13 @@ function Carousel({ currentTranslations }) {
         </h1>
         <div className="flex items-center justify-between gap-2">
           <div
-            className="flex items-center justify-center w-10 h-10 text-black bg-[#DFDFDF] rounded-full bg-gray-900 hover:bg-gray-800 focus:outline-none"
+            className="flex items-center justify-center w-10 h-10 text-white bg-MainGreen rounded-full bg-gray-900 hover:bg-gray-800 focus:outline-none"
             onClick={handlePrevious}
           >
             <Icon className="text-2xl" icon="ion:arrow-back-outline" />
           </div>
           <div
-            className="flex items-center justify-center w-10 h-10 text-black bg-[#DFDFDF] rounded-full bg-gray-900 hover:bg-gray-800 focus:outline-none"
+            className="flex items-center justify-center w-10 h-10 text-white bg-MainGreen rounded-full bg-gray-900 hover:bg-gray-800 focus:outline-none"
             onClick={handleNext}
           >
             <Icon className="text-2xl" icon="ion:arrow-forward-outline" />

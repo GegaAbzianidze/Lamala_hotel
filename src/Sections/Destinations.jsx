@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import Button from "../assets/Button";
+import PropTypes from "prop-types";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZ2VnYTE4MjIiLCJhIjoiY2xoZHdkbTFpMHFscjNnbnZiYTZjbzA2eiJ9.ilONB2OxcDRZXPutJfuNNw";
 
-function Destinations() {
+function Destinations({ translations }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const startCoords = [44.829737, 41.792774];
   const [endCoords, setEndCoords] = useState([41.810259, 44.813526]);
+  const [disableBox, setDisableBox] = useState(false);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -33,7 +35,9 @@ function Destinations() {
             features: [
               {
                 type: "Feature",
-                properties: {},
+                properties: {
+                  disableBox: disableBox,
+                },
                 geometry: {
                   type: "Point",
                   coordinates: startCoords,
@@ -48,7 +52,7 @@ function Destinations() {
         },
       });
     });
-  }, [startCoords]);
+  }, [startCoords, disableBox]);
 
   const handleButtonClick = (newCoords) => {
     const [lat, lng] = newCoords; // Destructure the newCoords array
@@ -104,10 +108,23 @@ function Destinations() {
 
   return (
     <div className="flex flex-col md:flex-row md:justify-between 2xl:justify-center lg:px-32 md:py-12">
-      <div
-        className="md:w-[800px] w-full md:max-w-[800px] h-[450px] rounded-lg overflow-hidden"
-        ref={mapContainer}
-      />
+      <div className="relative md:w-[800px] w-full md:max-w-[800px] h-[450px] rounded-lg overflow-hidden">
+        <div
+          className={`absolute inset-0 flex items-center justify-center ${
+            disableBox ? "pointer-events-none" : ""
+          }`}
+        >
+          {!disableBox && (
+            <div
+              className="bg-black opacity-70 p-4 rounded-xl cursor-pointer  duration-300 hover:opacity-75 w-full h-full flex items-center justify-center"
+              onClick={() => setDisableBox(true)}
+            >
+              <p className="text-white text-lg font-semibold">{translations.touch}</p>
+            </div>
+          )}
+        </div>
+        <div ref={mapContainer} className="h-full" />
+      </div>
       <div className="md:w-[450px] w-full md:max-w-[450px] h-[450px] overflow-y-auto SCRL">
         <Button
           handleClick={handleButtonClick}
@@ -144,5 +161,9 @@ function Destinations() {
     </div>
   );
 }
+
+Destinations.propTypes = {
+  translations: PropTypes.string.isRequired,
+};
 
 export default Destinations;
